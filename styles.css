@@ -29,6 +29,7 @@ body {
 }
 #gpt {
     width: 90%;
+    max-width: 450px;
 }
 #gpt-response {
     border: 1px solid black;
