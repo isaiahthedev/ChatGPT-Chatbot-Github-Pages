@@ -46,3 +46,17 @@ body {
 #previous h3 {
     text-align: center;
 }
+#api {
+    height: 40px;
+    width: 400px;
+    padding-left: 10px;
+}
+h3 {
+    margin-top: 20px;
+}
+#stop-btn {
+    display: none;
+}
+button {
+    margin-top: 5px;
+}

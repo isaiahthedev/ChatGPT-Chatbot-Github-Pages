@@ -1,7 +1,6 @@
-import { KEY } from "./api.js"
-
-const API_KEY = KEY;
 const API_URL = "https://api.openai.com/v1/chat/completions";
+
+let API_KEY = `"${document.getElementById('api').value}"`;
 
 const promptInput = document.getElementById('prompt-input');
 
@@ -18,6 +17,7 @@ const generate = async () => {
     }
     gen.disabled = true;
     gen.innerText = "Generating...";
+    API_KEY = `${document.getElementById('api').value}`;
     try {
         const gpt = await fetch(API_URL, {
             method: "POST",
@@ -27,7 +27,7 @@ const generate = async () => {
             },
             body: JSON.stringify({
                 model: "gpt-3.5-turbo",
-                messages: [{role: "user", content: `Here is my prompt: "${promptInput.value}" and here is our conversation so far: "${prev.innerText}". You are GPT, and I am User. Do not use any of our previous conversation in your response only answer the prompt without saying User: or GPT:`}]
+                messages: [{role: "user", content: promptInput.value}]
             })
         });
         const data = await gpt.json()
