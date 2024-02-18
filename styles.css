@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    width: 100%;
+}
+textarea {
+    margin: 0 auto;
+    padding: 10px;
+    width: 400px;
+    resize: none;
+    height: 40px;
+}
+textarea:focus {
+    outline: none;
+}
+button {
+    margin: 0 auto;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+#gpt-response {
+    border: 1px solid black;
+    height: 100px;
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+    overflow-y: auto;
+}
