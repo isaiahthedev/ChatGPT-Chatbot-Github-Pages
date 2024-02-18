@@ -1,2 +1,1 @@
-# gpttest
-messing around
+# ChatGPT Chatbot
