@@ -35,3 +35,14 @@ body {
     padding: 10px;
     overflow-y: auto;
 }
+#previous {
+    border: 1px solid black;
+    height: 100px;
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+    overflow-y: auto;
+}
+#previous h3 {
+    text-align: center;
+}
